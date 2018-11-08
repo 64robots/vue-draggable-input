@@ -1,7 +1,7 @@
 {
   "name": "vue-draggable-input",
-  "description": "A simple, example component library using Vue CLI 3.",
-  "version": "1.2.3",
+  "description": "Input Number that increments / decrements value dragging up / down",
+  "version": "0.1.0",
   "author": {
     "name": "64 Robots",
     "email": "javi@64robots.com"

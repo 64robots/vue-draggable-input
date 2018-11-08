@@ -1,6 +1,6 @@
 # Vue Draggable Input
 
-> An example component library built with Vue CLI 3.
+> Input Number that increments / decrements value dragging up / down
 
 ## Usage
 
@@ -21,10 +21,7 @@ Drop the library in with a `<script>` tag alongside Vue to globally install all 
 Or, if you only want to use a small subset of components, drop them in individually:
 
 ```html
-<div id="app">
-  <hello-a></hello-a>
-  <hello-b></hello-b>
-</div>
+<div id="app"><dragable-input></dragable-input></div>
 
 <script src="https://unpkg.com/vue"></script>
 <script src="https://unpkg.com/vue-draggable-inut/dist/DraggableInput/index.umd.min.js"></script>
@@ -96,6 +93,5 @@ export default {
 Or, if you only want to use a small subset of components, import individually bundled components from the `src` directory to reduce the size of your application:
 
 ```js
-import HelloA from 'hello-vue-components/src/HelloA'
-import HelloB from 'hello-vue-components/src/HelloB'
+import DraggableInput from 'hello-vue-components/src/DraggableInput'
 ```
