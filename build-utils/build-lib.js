@@ -20,7 +20,7 @@ execSync(
   `${vueCliServicePath} build src/index.js --target lib --name index --dest dist/`
 )
 // Rename the CommonJS build so that it can be imported with
-// hello-vue-components/dist
+// vue-draggable-input/dist
 renameIndex('dist')
 
 // For each component in the src directory...
@@ -31,7 +31,7 @@ for (const componentName of componentNames) {
   )
 
   // Rename the CommonJS build so that it can be imported with
-  // hello-vue-components/dist/ComponentName
+  // vue-draggable-input/dist/ComponentName
   renameIndex(`dist/${componentName}`)
 }
 
@@ -45,31 +45,28 @@ if (process.env.VUE_APP_E2E) {
   )
   const nodeModulesDir = path.resolve(
     __dirname,
-    '../node_modules/hello-vue-components'
+    '../node_modules/vue-draggable-input'
   )
   if (!fs.existsSync(nodeModulesDir)) {
     fs.mkdirSync(nodeModulesDir)
   }
   ncp(
     path.resolve(__dirname, '../dist'),
-    path.resolve(__dirname, '../node_modules/hello-vue-components/dist'),
+    path.resolve(__dirname, '../node_modules/vue-draggable-input/dist'),
     error => {
       if (error) console.error(error)
     }
   )
   ncp(
     path.resolve(__dirname, '../src'),
-    path.resolve(__dirname, '../node_modules/hello-vue-components/src'),
+    path.resolve(__dirname, '../node_modules/vue-draggable-input/src'),
     error => {
       if (error) console.error(error)
     }
   )
   ncp(
     path.resolve(__dirname, '../package.json'),
-    path.resolve(
-      __dirname,
-      '../node_modules/hello-vue-components/package.json'
-    ),
+    path.resolve(__dirname, '../node_modules/vue-draggable-input/package.json'),
     error => {
       if (error) console.error(error)
     }

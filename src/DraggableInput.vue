@@ -2,7 +2,7 @@
   <input
     v-model="internalValue"
     type="text"
-    mousedown="clicking = true"
+    @mousedown="clicking = true"
     @input="setValue($event.target.value)"
   >
 </template>
