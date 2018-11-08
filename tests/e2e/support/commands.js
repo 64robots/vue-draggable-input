@@ -2,5 +2,5 @@
 // https://on.cypress.io/custom-commands
 
 Cypress.Commands.add('componentsAreRenderedCorrectly', () => {
-  cy.contains('div', 'DraggableInput')
+  cy.get('div').find('input')
 })
