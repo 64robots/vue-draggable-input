@@ -2,6 +2,8 @@
 
 > Input Number that increments / decrements value dragging up / down
 
+![Demo](http://g.recordit.co/Z8j1NmOKRp.gif)
+
 ## Usage
 
 ### Directly in the browser
@@ -12,7 +14,7 @@ Drop the library in with a `<script>` tag alongside Vue to globally install all 
 <div id="app"><dragable-input></dragable-input></div>
 
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vue-draggable-inut"></script>
+<script src="https://unpkg.com/vue-draggable-input"></script>
 <script>
   new Vue({ el: '#app' })
 </script>
@@ -35,7 +37,7 @@ Or, if you only want to use a small subset of components, drop them in individua
 Install the library with NPM:
 
 ```bash
-npm install vue-draggable-inut
+npm install vue-draggable-input
 ```
 
 Then register the library as a plugin to globally register the component:
