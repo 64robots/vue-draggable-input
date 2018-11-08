@@ -2,6 +2,8 @@
 
 > Input Number that increments / decrements value dragging up / down
 
+![Demo](http://g.recordit.co/Z8j1NmOKRp.gif)
+
 ## Usage
 
 ### Directly in the browser
