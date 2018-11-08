@@ -26,7 +26,7 @@ Or, if you only want to use a small subset of components, drop them in individua
 <div id="app"><dragable-input></dragable-input></div>
 
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vue-draggable-inut/dist/DraggableInput/index.umd.min.js"></script>
+<script src="https://unpkg.com/vue-draggable-input/dist/DraggableInput/index.umd.min.js"></script>
 <script>
   new Vue({ el: '#app' })
 </script>
