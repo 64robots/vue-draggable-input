@@ -20,18 +20,6 @@ Drop the library in with a `<script>` tag alongside Vue to globally install all 
 </script>
 ```
 
-Or, if you only want to use a small subset of components, drop them in individually:
-
-```html
-<div id="app"><dragable-input></dragable-input></div>
-
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vue-draggable-inut/dist/DraggableInput/index.umd.min.js"></script>
-<script>
-  new Vue({ el: '#app' })
-</script>
-```
-
 ### In a module system (without Vue CLI)
 
 Install the library with NPM:
@@ -56,12 +44,6 @@ import { DraggableInput } from 'vue-draggable-input'
 export default {
   components: { DraggableInput }
 }
-```
-
-Or, if you only want to use a small subset of components, import individually bundled components from the `dist` directory to reduce the size of your application:
-
-```js
-import DraggableInput from 'vue-draggable-input/dist/DraggableInput'
 ```
 
 ### In a module system (with Vue CLI)
@@ -90,10 +72,4 @@ import { DraggableInput } from 'vue-draggable-input/src'
 export default {
   components: { DraggableInput }
 }
-```
-
-Or, if you only want to use a small subset of components, import individually bundled components from the `src` directory to reduce the size of your application:
-
-```js
-import DraggableInput from 'hello-vue-components/src/DraggableInput'
 ```
